@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8" />
     <title>{% block title %}Test des pizzeria{% endblock %}</title>
-    {% block stylesheets %}{% endblock %}
+    {% block stylesheets %}
+        <link href="../assets/css/app.css" rel="stylesheet">
+
+    {% endblock %}
     <script src="https://use.fontawesome.com/7e065ddf26.js"></script>
+    <!-- <script type="text/javascript" src="../assets/js/app.js"></script>  -->
+    {% javascripts '@EnsUserBundle/Resources/public/js/jquery.tagsinput.js'%}
+
+        <script type="text/javascript" src="../assets/js/app.js"></script>
+    {% endjavascripts %}
+
+
     <link href="https://fonts.googleapis.com/css?family=Exo|Indie+Flower" rel="stylesheet">
     {{ encore_entry_link_tags('app') }}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
 </head>
 <body>
 <header class="container">
