@@ -4,6 +4,10 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    database_host:     localhost
+    database_name:     sdvitest
+    database_user:     root
+    database_password:
 
 services:
     # default configuration for services in *this* file
@@ -25,3 +29,11 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+
+#    DATABASE_URL="mysql://root:@127.0.0.1:3306/sdvitest"
+
+
+
+
+
